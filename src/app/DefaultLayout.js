@@ -4,9 +4,9 @@ import React from "react";
 
 const DefaultLayout = ({ children }) => {
   return (
-    <div className="flex bg-dark900 h-full p-4">
+    <div className="flex bg-dark900 h-full p-4  ">
       <SideBar />
-      <div>
+      <div className="bclass flex-1 rounded-lg ml-[10rem]">
         <NavBar />
         <main>{children}</main>
       </div>

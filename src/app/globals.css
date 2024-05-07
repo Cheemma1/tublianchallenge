@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+.button {
+  background: linear-gradient(90deg, #fbda61 0%, #ff5acd 100%);
+}
+.btn2 {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(90deg, #fbda61 0%, #ff5acd 100%) 1;
+  border-radius: 15px;
+}
+.bclass {
+  border-left: 1px solid #1e1e1e;
+  border-right: 1px solid #1e1e1e;
+  border-top: 1px solid #1e1e1e;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
