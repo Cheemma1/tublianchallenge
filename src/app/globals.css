@@ -5,16 +5,41 @@
 .button {
   background: linear-gradient(90deg, #fbda61 0%, #ff5acd 100%);
 }
-.btn2 {
-  border-width: 1px;
-  border-style: solid;
-  border-image: linear-gradient(90deg, #fbda61 0%, #ff5acd 100%) 1;
-  border-radius: 15px;
+
+.box {
+  position: relative;
 }
-.bclass {
+.box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+  padding: 1px;
+  background: linear-gradient(90deg, #fbda61 0%, #ff5acd 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+
+/* .bclass {
   border-left: 1px solid #1e1e1e;
   border-right: 1px solid #1e1e1e;
   border-top: 1px solid #1e1e1e;
+} */
+.overflow {
+  overflow-x: hidden; /* or overflow-x: auto; */
+}
+
+.overflow::-webkit-scrollbar {
+  display: none; /* This hides the scrollbar in webkit browsers like Chrome and Safari */
 }
 
 :root {
@@ -40,9 +65,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
+/* 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */

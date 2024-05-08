@@ -4,11 +4,16 @@ import React from "react";
 
 const DefaultLayout = ({ children }) => {
   return (
-    <div className="flex bg-dark900 h-full p-4  ">
+    <div className="flex bg-dark900 h-full lg:p-4 overflow-hidden scrollbar-hide">
+      {" "}
+      {/* Added overflow-hidden */}
       <SideBar />
-      <div className="bclass flex-1 rounded-lg ml-[10rem]">
+      <div className="md:border border-dark50 flex-1 rounded-lg lg:ml-[10rem] overflow-auto scrollbar-hide">
+        {" "}
+        {/* Added overflow-auto */}
         <NavBar />
-        <main>{children}</main>
+        <main className="p-4">{children}</main>{" "}
+        {/* Added padding to main content */}
       </div>
     </div>
   );

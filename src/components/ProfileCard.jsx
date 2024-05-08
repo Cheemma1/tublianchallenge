@@ -9,7 +9,7 @@ const ProfileCard = ({ img, txt1, txt2, txt3 }) => {
         <div className="flex flex-col gap-1">
           <h2>{txt1}</h2>
           <p className="text-textclr">{txt2}</p>
-          <p className="border-2 border-white rounded-full px-2 w-[75%] mt-2">
+          <p className="border-2 border-white rounded-full px-2 md:w-[75%] mt-2">
             {txt3}
           </p>
         </div>

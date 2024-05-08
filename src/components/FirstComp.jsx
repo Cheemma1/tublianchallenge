@@ -6,7 +6,7 @@ import CardTwo from "./CardTwo";
 
 const FirstComp = () => {
   return (
-    <div className="bg-dark50 border border-dark100 py-6 px-4 rounded-md">
+    <div className="bg-dark50 border border-dark100 py-6 px-4 rounded-md container mx-auto  w-full">
       <ProfileCard
         img={avatar}
         txt1={"John Doe"}

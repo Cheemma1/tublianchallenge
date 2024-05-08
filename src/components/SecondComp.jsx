@@ -8,7 +8,7 @@ import cardimg from "../../public/frame455.png";
 
 const SecondComp = () => {
   return (
-    <div className="bg-dark50 border border-dark100 py-6 px-4 rounded-md mt-4">
+    <div className="bg-dark50 border border-dark100 py-6 px-4 rounded-md mt-4 container mx-auto w-full">
       <ProfileCard
         img={avatar}
         txt1={"John Doe"}
@@ -17,7 +17,7 @@ const SecondComp = () => {
       />
       <div className="flex items-center gap-8 w-full mt-8">
         <CardOne />
-        <Image src={cardimg} className=" flex-1 h-[180px]" />
+        <Image src={cardimg} alt="image" className="h-[170px] mt-8" />
         <CardTwo />
       </div>
     </div>
