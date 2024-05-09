@@ -15,9 +15,9 @@ const SecondComp = () => {
         txt2={"Lagos, Nigeria. $250,000(USD)"}
         txt3={"Frontend Developer"}
       />
-      <div className="flex items-center gap-8 w-full mt-8">
+      <div className="flex items-center justify-between gap-8 w-full mt-8 overflow-x-scroll">
         <CardOne />
-        <Image src={cardimg} alt="image" className="h-[170px] mt-8" />
+        <Image src={cardimg} alt="image" className="w-full" />
         <CardTwo />
       </div>
     </div>

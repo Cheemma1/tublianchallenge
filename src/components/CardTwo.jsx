@@ -2,8 +2,8 @@ import React from "react";
 
 const CardTwo = () => {
   return (
-    <div className="bg-dark100 border border-dark200 p-2 mt-6 rounded-md w-[300px] h-[170px]">
-      <div className="flex flex-col gap-3">
+    <div className="bg-dark100 border border-dark200 p-2 mt-6 rounded-md md:w-[300px] md:h-[170px] h-1/2 w-full">
+      <div className="flex flex-col gap-3 w-full">
         <p className="border-2 border-white rounded-full px-2 w-[60%] lg:w-[22%]">
           Other
         </p>

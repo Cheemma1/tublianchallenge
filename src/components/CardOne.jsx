@@ -2,7 +2,7 @@ import React from "react";
 
 const CardOne = () => {
   return (
-    <div className="bg-dark100 border border-dark200 p-2 mt-6 rounded-md w-[300px] h-[170px]">
+    <div className="bg-dark100 border border-dark200 p-2 mt-6 rounded-md md:w-[300px] h-full w-full  md:h-[170px]">
       <div className="flex flex-col gap-4">
         <p className="border-2 border-white rounded-full px-2 w-[22%]">Other</p>
         <h3>Portfolio</h3>
