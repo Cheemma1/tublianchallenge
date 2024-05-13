@@ -5,7 +5,7 @@ const ProfileCard = ({ img, txt1, txt2, txt3 }) => {
   return (
     <div className="flex items-center justify-between">
       <div className="flex items-center gap-4">
-        <Image src={img}  alt="avatar"/>
+        <Image src={img} alt="avatar" />
         <div className="flex flex-col gap-1">
           <h2>{txt1}</h2>
           <p className="text-textclr">{txt2}</p>
